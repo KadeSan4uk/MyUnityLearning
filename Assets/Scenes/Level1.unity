@@ -138,7 +138,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f46dd1960d8dfff4b9e5abcdc0f59629,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f46dd1960d8dfff4b9e5abcdc0f59629,
         type: 3}
@@ -185,6 +185,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Man
       objectReference: {fileID: 0}
+    - target: {fileID: 1630794972795428178, guid: f46dd1960d8dfff4b9e5abcdc0f59629,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9ddfe8788ee64b04392bae8940f44677, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -394,13 +399,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1731334775}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.27252436, y: -0, z: -0, w: 0.96214885}
-  m_LocalPosition: {x: 0, y: 4.77, z: -5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.12567906, y: -0, z: -0, w: 0.99207103}
+  m_LocalPosition: {x: 0, y: 3.65, z: -5}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 31.629, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 14.44, y: 0, z: 0}
 --- !u!114 &1731334779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,7 +463,7 @@ GameObject:
   - component: {fileID: 1870468175}
   - component: {fileID: 1870468174}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -506,7 +511,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 2bc36d8d8823106408cfb7106c5e2c75, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -545,8 +550,8 @@ Transform:
   m_GameObject: {fileID: 1870468173}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 44}
-  m_LocalScale: {x: 0.5, y: 1, z: 10}
+  m_LocalPosition: {x: 0, y: -0.1, z: 497}
+  m_LocalScale: {x: 0.7, y: 0.2, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
