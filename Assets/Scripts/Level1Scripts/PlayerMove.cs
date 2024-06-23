@@ -4,10 +4,11 @@ using System.Collections.Generic;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private float _speed;
-    [SerializeField] private float _rotationSpeed = 100f;
-    private float minRotation = -70f;
-    private float maxRotation = 70f;  
+    [SerializeField] float _speed;
+    [SerializeField] float _rotationSpeed = 100f;
+    [SerializeField] Animator _animator;
+    float minRotation = -70f;
+    float maxRotation = 70f;
 
     void Update()
     // Time.deltaTime оптимизирует движение обьекта не зависимо от частоты кадров
@@ -18,7 +19,11 @@ public class Player : MonoBehaviour
             Vector3 newPosition = transform.position + transform.forward * Time.deltaTime * _speed;
             newPosition.x = Mathf.Clamp(newPosition.x, -2.9f, 2.9f);
             transform.position = newPosition;
-
+            _animator.SetBool("Run", true);
+        }
+        else
+        {
+            _animator.SetBool("Run", false);
         }
 
         float currentYRotation = transform.localEulerAngles.y;
