@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     // Time.deltaTime оптимизирует движение обьекта не зависимо от частоты кадров
     {
 
-        _camera.transform.position = transform.position + new Vector3(0.001f, 3.574f, -10);
+        _camera.transform.position = transform.position + new Vector3(0.001f, 4f, -5);
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             Vector3 newPosition = transform.position + transform.forward * Time.deltaTime * _speed;
