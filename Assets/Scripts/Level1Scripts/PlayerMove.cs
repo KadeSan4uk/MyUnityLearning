@@ -7,20 +7,12 @@ public class Player : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private float _rotationSpeed = 100f;
     private float minRotation = -70f;
-    private float maxRotation = 70f;
-    [SerializeField] private Camera _camera;
-
-    void Start()
-    {
-
-    }
-
+    private float maxRotation = 70f;  
 
     void Update()
     // Time.deltaTime оптимизирует движение обьекта не зависимо от частоты кадров
     {
 
-        _camera.transform.position = transform.position + new Vector3(0.001f, 4f, -5);
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             Vector3 newPosition = transform.position + transform.forward * Time.deltaTime * _speed;
