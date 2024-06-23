@@ -1,12 +1,14 @@
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 
 public class CameraMover : MonoBehaviour
 {
-    [SerializeField] Transform _target;
-    void Update()
+    [SerializeField] private Transform _target;
+    
+    void LateUpdate()
     {
-        transform.position = _target.position;
+        if (_target != null)
+        {
+            transform.position = _target.position;
+        }
     }
 }
