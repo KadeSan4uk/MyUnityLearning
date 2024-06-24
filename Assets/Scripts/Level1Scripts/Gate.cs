@@ -10,6 +10,6 @@ public class Gate : MonoBehaviour
 
     private void OnValidate()
     {
-        _gateAppearaence.UpdateVisual(_deformationType,_value);
+        _gateAppearaence.UpdateVisual(_deformationType, _value);
     }
 }
