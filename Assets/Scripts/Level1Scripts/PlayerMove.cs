@@ -17,7 +17,7 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             Vector3 newPosition = transform.position + transform.forward * Time.deltaTime * _speed;
-            newPosition.x = Mathf.Clamp(newPosition.x, -2.9f, 2.9f);
+            newPosition.x = Mathf.Clamp(newPosition.x, -2.6f, 2.6f);
             transform.position = newPosition;
             _animator.SetBool("Run", true);
         }
