@@ -42,7 +42,10 @@ public class PlayerModifaer : MonoBehaviour
         float offsetY = _height * _heightMultiplayer + 0.17f;
         _topSpine.position = _bottomSpine.position + new Vector3(0, offsetY, 0);
         _height += value;
-        _renderer.material.SetFloat("_PushValue", _height * _heightMultiplayer);
+        _width += value;
+        _renderer.material.SetFloat("_PushValue", _width * _widthMultiplayer);
+
+        //_renderer.material.SetFloat("_PushValue", _height * _heightMultiplayer);
 
     }
 }
