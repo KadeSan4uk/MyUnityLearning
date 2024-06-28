@@ -18,7 +18,12 @@ public class PlayerModifaer : MonoBehaviour
 
 
     void Update()
-    {
+    {  
+        //Значение 0.17F значит стандартное расстояние между костями спины модели 
+        float offsetY = _height * _heightMultiplayer + 0.17f;
+
+        _topSpine.position = _bottomSpine.position + new Vector3(0, offsetY, 0);
+
         _collaiderTransform.localScale = new Vector3(1, 1.84f + _height * _heightMultiplayer, 1);
 
         if (Input.GetKeyDown(KeyCode.F))
@@ -38,14 +43,7 @@ public class PlayerModifaer : MonoBehaviour
     }
 
     public void AddHeight(int value)
-    { //Значение 0.17F значит стандартное расстояние между костями спины модели 
-        float offsetY = _height * _heightMultiplayer + 0.17f;
-
-        _topSpine.position = _bottomSpine.position + new Vector3(0, offsetY, 0);
-
-        _height += value;
-       
-
-
+    {        
+        _height += value;      
     }
 }

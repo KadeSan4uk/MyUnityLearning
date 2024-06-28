@@ -1747,10 +1747,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _width: 0
-  _height: 0
+  _height1: 0
   _renderer: {fileID: 239658152}
-  _topSpine: {fileID: 1058344259}
-  _bottomSpine: {fileID: 1104935544}
+  _topSpine: {fileID: 1104935544}
+  _bottomSpine: {fileID: 1058344259}
   _collaiderTransform: {fileID: 174423203}
 --- !u!1 &1668778926
 GameObject:
