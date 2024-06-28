@@ -7,7 +7,7 @@ public class PlayerModifaer : MonoBehaviour
 
     [SerializeField] int _width;
     [SerializeField] int _height;
-    float _widthMultiplayer = 0.005f;
+    float _widthMultiplayer = 0.0005f;
     float _heightMultiplayer = 0.01f;
 
     [SerializeField] Renderer _renderer;
