@@ -18,7 +18,7 @@ public class PlayerModifaer : MonoBehaviour
 
 
     void Update()
-    {  
+    {        
         //Значение 0.17F значит стандартное расстояние между костями спины модели 
         float offsetY = _height * _heightMultiplayer + 0.17f;
 
@@ -36,14 +36,43 @@ public class PlayerModifaer : MonoBehaviour
         }
     }
 
+
     public void AddWidth(int value)
     {
         _width += value;
-        _renderer.material.SetFloat("_PushValue", _width * _widthMultiplayer);
+        UpdateWidth();
     }
 
     public void AddHeight(int value)
-    {        
-        _height += value;      
+    {
+        _height += value;
+    }
+
+    public void HitBarrier()
+    {
+        if (_height > 0)
+        {
+            _height -= 100;
+        }
+        else if (_width > 0)
+        {
+            _width -= 100;
+            UpdateWidth();
+        }
+        else
+        {
+            Die();
+        }
+
+    }
+
+    void UpdateWidth()
+    {
+        _renderer.material.SetFloat("_PushValue", _width * _widthMultiplayer);
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
     }
 }

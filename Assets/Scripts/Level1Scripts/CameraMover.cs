@@ -6,7 +6,7 @@ public class CameraMover : MonoBehaviour
 
     void LateUpdate()
     {
-        if (_target != null)
+        if (_target)
         {
             transform.position = _target.position;
         }

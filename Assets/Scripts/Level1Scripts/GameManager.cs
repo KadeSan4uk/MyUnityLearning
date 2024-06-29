@@ -8,5 +8,6 @@ public class GameManager : MonoBehaviour
     public void PLay()
     {
         _startMenu.SetActive(false);
+        FindObjectOfType<PlayerBehaviuor>().Play();
     }
 }
