@@ -10,7 +10,8 @@ public class Barrier : MonoBehaviour
 
         if (playerModifaer)
         {
-            playerModifaer.HitBarrier();
+            playerModifaer.HitBarrierHeigth();
+            playerModifaer.HitBarrierWitdth();
             Destroy(gameObject);
         }
     }
