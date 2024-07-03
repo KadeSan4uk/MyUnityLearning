@@ -27,8 +27,8 @@ public class Gate : MonoBehaviour
             {
                 playervodifaer.AddHeight(_value);
             }
-            
 
+            Destroy(gameObject);
         }
     }
 }

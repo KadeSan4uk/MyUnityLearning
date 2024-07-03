@@ -72,5 +72,6 @@ public class PlayerModifaer : MonoBehaviour
     void Die()
     {
         Destroy(gameObject);
+        FindObjectOfType<GameManager>().ShowFinishWindow();
     }
 }
