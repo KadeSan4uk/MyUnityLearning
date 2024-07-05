@@ -5,13 +5,31 @@ using System.Collections.Generic;
 
 public class CoinManager : MonoBehaviour
 {
-    [SerializeField] int _numberOfCoinsInLevel;
+    public int NumberOfCoins;
     [SerializeField] TextMeshProUGUI _text;
+
+    private void Start()
+    {
+        //обрвщение к статическому полю класса.
+        NumberOfCoins = Progress.Instance.Coins;
+        _text.text = NumberOfCoins.ToString();
+    }
 
     public void AddOne()
     {
-        _numberOfCoinsInLevel++;
-        _text.text = _numberOfCoinsInLevel.ToString();
+        NumberOfCoins++;
+        _text.text = NumberOfCoins.ToString();
+    }
+
+    public void SaveToProgress()
+    {
+        Progress.Instance.Coins=NumberOfCoins;
+    }
+
+    public void SpendCoins(int value)
+    {
+        NumberOfCoins-=value;
+        _text.text = NumberOfCoins.ToString();
     }
 
 }

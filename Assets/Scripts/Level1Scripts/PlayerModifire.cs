@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class PlayerModifaer : MonoBehaviour
+public class PlayerModifire : MonoBehaviour
 {
 
     [SerializeField] int _width;
@@ -16,6 +16,11 @@ public class PlayerModifaer : MonoBehaviour
 
     [SerializeField] Transform _collaiderTransform;
 
+    private void Start()
+    {
+        SetWidth(Progress.Instance.Width);
+        SetHeight(Progress.Instance.Height);
+    }
 
     void Update()
     {
@@ -35,6 +40,17 @@ public class PlayerModifaer : MonoBehaviour
     }
 
     public void AddHeight(int value)
+    {
+        _height += value;
+    }
+
+    public void SetWidth(int value)
+    {
+        _width += value;
+        UpdateWidth();
+
+    }
+    public void SetHeight(int value)
     {
         _height += value;
     }

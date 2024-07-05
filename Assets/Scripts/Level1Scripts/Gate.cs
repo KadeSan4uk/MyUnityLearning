@@ -16,7 +16,7 @@ public class Gate : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //убеждаемся что тот компонент который вызвал тригер и есть Player RigiBody
-        PlayerModifaer playervodifaer = other.attachedRigidbody.GetComponent<PlayerModifaer>();
+        PlayerModifire playervodifaer = other.attachedRigidbody.GetComponent<PlayerModifire>();
         if (playervodifaer)
         {
             if (_deformationType == DeformationType.Width)

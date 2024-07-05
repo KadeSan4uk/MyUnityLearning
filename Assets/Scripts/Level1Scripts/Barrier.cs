@@ -6,7 +6,7 @@ public class Barrier : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        PlayerModifaer playerModifaer =other.attachedRigidbody.GetComponent<PlayerModifaer>();
+        PlayerModifire playerModifaer =other.attachedRigidbody.GetComponent<PlayerModifire>();
 
         if (playerModifaer)
         {
