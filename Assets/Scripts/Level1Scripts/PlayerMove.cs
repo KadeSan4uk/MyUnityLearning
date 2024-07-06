@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using Unity.VisualScripting;
 using System.Collections.Generic;
 
 public class PlayerMove : MonoBehaviour
@@ -26,7 +27,7 @@ public class PlayerMove : MonoBehaviour
             _animator.SetBool("Run", false);
         }
 
-        float currentYRotation = transform.localEulerAngles.y;
+        float currentYRotation = transform.localEulerAngles.y;// в градусах
 
         // Преобразуем угол в диапазон от -180 до 180 градусов
         if (currentYRotation > 180)
@@ -50,4 +51,5 @@ public class PlayerMove : MonoBehaviour
         // Устанавливаем новый угол поворота
         transform.localRotation = Quaternion.Euler(0, currentYRotation, 0);
     }
+   
 }

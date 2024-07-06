@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 public class PlayerBehaviuor : MonoBehaviour
 {
-    [SerializeField] PlayerMove _playerMove;
-    [SerializeField] PreFinishBehaviuor _preFinishBehaviuor;
-    [SerializeField] Animator _animator;
+    [SerializeField] private PlayerMove _playerMove;
+    [SerializeField] private PreFinishBehaviuor _preFinishBehaviuor;
+    [SerializeField] private Animator _animator;
 
     void Start()
     {
