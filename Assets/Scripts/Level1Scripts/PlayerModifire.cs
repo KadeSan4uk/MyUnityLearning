@@ -15,7 +15,7 @@ public class PlayerModifire : MonoBehaviour
     [SerializeField] Transform _bottomSpine;
 
     [SerializeField] Transform _collaiderTransform;
-
+    [SerializeField] AudioSource _audioModifire;
     private void Start()
     {
         SetWidth(Progress.Instance.Width);
@@ -37,11 +37,19 @@ public class PlayerModifire : MonoBehaviour
     {
         _width += value;
         UpdateWidth();
+        if (value > 0)
+        {
+            _audioModifire.Play();
+        }
     }
 
     public void AddHeight(int value)
     {
         _height += value;
+        if (value > 0)
+        {
+            _audioModifire.Play();
+        }
     }
 
     public void SetWidth(int value)
