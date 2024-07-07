@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private GameObject _startMenu;
-    [SerializeField] private TextMeshProUGUI _levelText;
-    [SerializeField] private GameObject _finishWindow;
-    [SerializeField] private CoinManager _coinManager;
+    [SerializeField] GameObject _startMenu;
+    [SerializeField] TextMeshProUGUI _levelText;
+    [SerializeField] GameObject _finishWindow;
+    [SerializeField] CoinManager _coinManager;
 
     private void Start()
     {
