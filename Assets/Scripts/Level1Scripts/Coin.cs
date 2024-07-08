@@ -4,7 +4,8 @@ using System.Collections.Generic;
 
 public class Coin : MonoBehaviour
 {
-    [SerializeField] float _rotationSpeed;
+    [SerializeField] private GameObject _coinsEffectCollect;
+    [SerializeField] private float _rotationSpeed;
     void Update()
     {
         transform.Rotate(0, _rotationSpeed * Time.deltaTime, 0);
@@ -14,5 +15,6 @@ public class Coin : MonoBehaviour
     {
         FindObjectOfType<CoinManager>().AddOne();
         Destroy(gameObject);
+        Instantiate(_coinsEffectCollect, transform.position,transform.rotation);
     }
 }

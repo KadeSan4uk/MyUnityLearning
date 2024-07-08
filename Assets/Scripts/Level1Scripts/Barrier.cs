@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class Barrier : MonoBehaviour
 {
+    [SerializeField] private GameObject _bricksEffectPrefab;
     [SerializeField] private AudioSource _breakWall;
     private void OnTriggerEnter(Collider other)
     {
@@ -15,6 +16,7 @@ public class Barrier : MonoBehaviour
             playerModifaer.HitBarrierHeigth();
             playerModifaer.HitBarrierWitdth();
             Destroy(gameObject);
+            Instantiate(_bricksEffectPrefab,transform.position, transform.rotation);
         }
     }
 }
