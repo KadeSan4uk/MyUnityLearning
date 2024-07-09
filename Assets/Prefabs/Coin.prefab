@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f068617369774648b2801e48902b39c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _coinsEffectCollect: {fileID: 8771972552311404799, guid: bbf9e36a48d6c5648a13889afab076fd,
+  _coinsEffectCollect: {fileID: 3901622341868453045, guid: fed8c51cb97215640949623137ea7a3a,
     type: 3}
   _rotationSpeed: 180
 --- !u!135 &2908808164498251288
