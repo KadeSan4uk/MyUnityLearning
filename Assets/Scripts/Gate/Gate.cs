@@ -2,33 +2,37 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class Gate : MonoBehaviour
+namespace MyLearning1.Assets
 {
-    [SerializeField] int _value;
-    [SerializeField] DeformationType _deformationType;
-    [SerializeField] GateAppearaence _gateAppearaence;
-
-    private void OnValidate()
+    public class Gate : MonoBehaviour
     {
-        _gateAppearaence.UpdateVisual(_deformationType, _value);
-    }
+        [SerializeField] int _value;
+        [SerializeField] DeformationType _deformationType;
+        [SerializeField] GateAppearaence _gateAppearaence;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        //убеждаемся что тот компонент который вызвал тригер и есть Player RigiBody
-        PlayerModifire playervodifaer = other.attachedRigidbody.GetComponent<PlayerModifire>();
-        if (playervodifaer)
+        private void OnValidate()
         {
-            if (_deformationType == DeformationType.Width)
-            {
-                playervodifaer.AddWidth(_value);
-            }
-            else if (_deformationType == DeformationType.Height)
-            {
-                playervodifaer.AddHeight(_value);
-            }
+            _gateAppearaence.UpdateVisual(_deformationType, _value);
+        }
 
-            Destroy(gameObject);
+        private void OnTriggerEnter(Collider other)
+        {
+            //убеждаемся что тот компонент который вызвал тригер и есть Player RigiBody
+            PlayerModifire playervodifaer = other.attachedRigidbody.GetComponent<PlayerModifire>();
+            if (playervodifaer)
+            {
+                if (_deformationType == DeformationType.Width)
+                {
+                    playervodifaer.AddWidth(_value);
+                }
+                else if (_deformationType == DeformationType.Height)
+                {
+                    playervodifaer.AddHeight(_value);
+                }
+
+                Destroy(gameObject);
+            }
         }
     }
+
 }

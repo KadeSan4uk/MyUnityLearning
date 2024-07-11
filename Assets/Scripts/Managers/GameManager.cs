@@ -4,38 +4,42 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+namespace MyLearning1.Assets
 {
-    [SerializeField] GameObject _startMenu;
-    [SerializeField] TextMeshProUGUI _levelText;
-    [SerializeField] GameObject _finishWindow;
-    [SerializeField] CoinManager _coinManager;
-
-    private void Start()
+    public class GameManager : MonoBehaviour
     {
-        _levelText.text = SceneManager.GetActiveScene().name;
-    }
-    public void PLay()
-    {
-        _startMenu.SetActive(false);
-        FindObjectOfType<PlayerBehaviuor>().Play();
-    }
+        [SerializeField] GameObject _startMenu;
+        [SerializeField] TextMeshProUGUI _levelText;
+        [SerializeField] GameObject _finishWindow;
+        [SerializeField] CoinManager _coinManager;
 
-    public void ShowFinishWindow()
-    {
-        _finishWindow.SetActive(true);
-    }
-
-    public void NextLevel()
-    {
-        int nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
-
-        if (nextLevel < SceneManager.sceneCountInBuildSettings)
+        private void Start()
         {
-            _coinManager.SaveToProgress();
-
-            SceneManager.LoadScene(nextLevel);
+            _levelText.text = SceneManager.GetActiveScene().name;
+        }
+        public void PLay()
+        {
+            _startMenu.SetActive(false);
+            FindObjectOfType<PlayerBehaviuor>().Play();
         }
 
+        public void ShowFinishWindow()
+        {
+            _finishWindow.SetActive(true);
+        }
+
+        public void NextLevel()
+        {
+            int nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
+
+            if (nextLevel < SceneManager.sceneCountInBuildSettings)
+            {
+                _coinManager.SaveToProgress();
+
+                SceneManager.LoadScene(nextLevel);
+            }
+
+        }
     }
+
 }

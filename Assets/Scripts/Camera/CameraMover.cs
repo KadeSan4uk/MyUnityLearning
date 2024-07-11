@@ -1,21 +1,24 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class CameraMover : MonoBehaviour
+namespace MyLearning1.Assets 
 {
-    [SerializeField] Transform _target;
-
-    private void Start()
+    public class CameraMover : MonoBehaviour
     {
-        //отвязка камеры от Плеера как дочерняя при старте
-        transform.parent = null;
-    }
+        [SerializeField] Transform _target;
 
-    void LateUpdate()
-    {        
-        if (_target)
+        private void Start()
         {
-            transform.position = _target.position;
+            //отвязка камеры от Плеера как дочерняя при старте
+            transform.parent = null;
+        }
+
+        void LateUpdate()
+        {
+            if (_target)
+            {
+                transform.position = _target.position;
+            }
         }
     }
 }

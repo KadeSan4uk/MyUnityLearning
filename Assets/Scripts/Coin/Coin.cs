@@ -2,19 +2,23 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class Coin : MonoBehaviour
+namespace MyLearning1.Assets
 {
-    [SerializeField] private GameObject _coinsEffectCollect;
-    [SerializeField] private float _rotationSpeed;
-    void Update()
+    public class Coin : MonoBehaviour
     {
-        transform.Rotate(0, _rotationSpeed * Time.deltaTime, 0);
+        [SerializeField] private GameObject _coinsEffectCollect;
+        [SerializeField] private float _rotationSpeed;
+        void Update()
+        {
+            transform.Rotate(0, _rotationSpeed * Time.deltaTime, 0);
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            FindObjectOfType<CoinManager>().AddOne();
+            Destroy(gameObject);
+            Instantiate(_coinsEffectCollect, transform.position, transform.rotation);
+        }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        FindObjectOfType<CoinManager>().AddOne();
-        Destroy(gameObject);
-        Instantiate(_coinsEffectCollect, transform.position,transform.rotation);
-    }
 }

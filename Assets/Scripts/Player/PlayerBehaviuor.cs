@@ -2,34 +2,38 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class PlayerBehaviuor : MonoBehaviour
+namespace MyLearning1.Assets
 {
-    [SerializeField] PlayerMove _playerMove;
-    [SerializeField] PreFinishBehaviuor _preFinishBehaviuor;
-    [SerializeField] Animator _animator;
-
-    void Start()
+    public class PlayerBehaviuor : MonoBehaviour
     {
-        _playerMove.enabled = false;
-        _preFinishBehaviuor.enabled = false;
-    }
+        [SerializeField] PlayerMove _playerMove;
+        [SerializeField] PreFinishBehaviuor _preFinishBehaviuor;
+        [SerializeField] Animator _animator;
 
-    public void Play()
-    {
-        _playerMove.enabled = true;
-    }
+        void Start()
+        {
+            _playerMove.enabled = false;
+            _preFinishBehaviuor.enabled = false;
+        }
 
-    public void StartPreFinishBehaviuor()
-    {
-        _playerMove.enabled = false;
-        _preFinishBehaviuor.enabled = true;
-    }
+        public void Play()
+        {
+            _playerMove.enabled = true;
+        }
 
-    public void StartFinishBehaviuor()
-    {
-        _preFinishBehaviuor.enabled = false;
-        _animator.SetTrigger("Dance");
-    }
+        public void StartPreFinishBehaviuor()
+        {
+            _playerMove.enabled = false;
+            _preFinishBehaviuor.enabled = true;
+        }
 
+        public void StartFinishBehaviuor()
+        {
+            _preFinishBehaviuor.enabled = false;
+            _animator.SetTrigger("Dance");
+        }
+
+
+    }
 
 }
