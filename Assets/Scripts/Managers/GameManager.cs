@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
-namespace MyLearning1.Assets
+namespace MyLearning1.Assets.Scripts
 {
     public class GameManager : MonoBehaviour
     {
