@@ -1,8 +1,9 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using MyLearning1.Assets.Scripts.Player;
 
-namespace MyLearning1.Assets.Scripts
+namespace MyLearning1.Assets.Scripts.Enviroment
 {
     public class PreFinishTrigger : MonoBehaviour
     {

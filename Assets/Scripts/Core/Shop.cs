@@ -1,8 +1,10 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using MyLearning1.Assets.Scripts.Player;
+using MyLearning1.Assets.Scripts.Enviroment;
 
-namespace MyLearning1.Assets.Scripts
+namespace MyLearning1.Assets.Scripts.Core
 {
     public class Shop : MonoBehaviour
     {

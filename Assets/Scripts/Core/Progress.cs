@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace MyLearning1.Assets.Scripts
+namespace MyLearning1.Assets.Scripts.Core
 {
     public class Progress : MonoBehaviour
     {

@@ -5000,10 +5000,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4559897414331038481}
   - component: {fileID: 4411161649722819734}
-  - component: {fileID: 6173615973623618131}
-  - component: {fileID: 7764307401193934112}
   - component: {fileID: 2966792859164392662}
-  - component: {fileID: 1322874233029466371}
+  - component: {fileID: 7764307401193934112}
+  - component: {fileID: 3735455980046558255}
+  - component: {fileID: 8968365183737438501}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -5057,7 +5057,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6173615973623618131
+--- !u!114 &2966792859164392662
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5066,11 +5066,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7044944254078496035}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df9b9f771a77c9147bef1547e1ae08ca, type: 3}
+  m_Script: {fileID: 11500000, guid: bddf6d62a67b4cd47a7d3dd7f6b2b22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerMove: {fileID: 0}
-  _preFinishBehaviuor: {fileID: 0}
+  _speed: 4
+  _rotationSpeed: 170
   _animator: {fileID: 7636845554064291078}
 --- !u!114 &7764307401193934112
 MonoBehaviour:
@@ -5091,7 +5091,7 @@ MonoBehaviour:
   _bottomSpine: {fileID: 6781830159435336828}
   _collaiderTransform: {fileID: 8160264782801851317}
   _audioModifire: {fileID: 8688094451384766550}
---- !u!114 &2966792859164392662
+--- !u!114 &3735455980046558255
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5100,13 +5100,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7044944254078496035}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bddf6d62a67b4cd47a7d3dd7f6b2b22a, type: 3}
+  m_Script: {fileID: 11500000, guid: df9b9f771a77c9147bef1547e1ae08ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 4
-  _rotationSpeed: 150
+  _playerMove: {fileID: 2966792859164392662}
+  _preFinishBehaviuor: {fileID: 8968365183737438501}
   _animator: {fileID: 7636845554064291078}
---- !u!114 &1322874233029466371
+--- !u!114 &8968365183737438501
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5115,7 +5115,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7044944254078496035}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7f1c9a7bcd9b5b4390a3d6e3c08aad3, type: 3}
+  m_Script: {fileID: 11500000, guid: 7acbb101039ec1c4aa00fbdf54f109b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7436549356063075222
@@ -5490,10 +5490,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 7636845554064291078}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f46dd1960d8dfff4b9e5abcdc0f59629,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 647937726135425499}
   m_SourcePrefab: {fileID: 100100000, guid: f46dd1960d8dfff4b9e5abcdc0f59629, type: 3}
 --- !u!1 &2496904299476283709 stripped
 GameObject:
@@ -5522,21 +5518,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &647937726135425499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2496904299476283709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bddf6d62a67b4cd47a7d3dd7f6b2b22a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 0
-  _rotationSpeed: 100
-  _animator: {fileID: 0}
 --- !u!4 &3021099064232881031 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f46dd1960d8dfff4b9e5abcdc0f59629,

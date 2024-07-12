@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace MyLearning1.Assets.Scripts
+namespace MyLearning1.Assets.Scripts.Enviroment
 {
     public enum DeformationType
     {

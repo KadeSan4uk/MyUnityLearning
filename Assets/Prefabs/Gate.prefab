@@ -92,8 +92,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 75
+  m_fontSizeBase: 75
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -645,7 +645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.26579428, b: 1, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -744,18 +744,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4405047390841429872}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ce67559df5edf6469620bceb3f6b639, type: 3}
+  m_Script: {fileID: 11500000, guid: a67e545d2f5cba64d814056386214a7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _text: {fileID: 3824112214034507100}
-  _topImage: {fileID: 6499271654681440472}
-  _glassImage: {fileID: 6304979557050365096}
-  _colorPositive: {r: 0, g: 0.26579428, b: 1, a: 1}
-  _colorNegative: {r: 1, g: 0.13803923, b: 0, a: 1}
-  _expandLable: {fileID: 2223127502551600551}
-  _shrinkLable: {fileID: 7717926707212537567}
-  _upLable: {fileID: 3849179227822798762}
-  _downLable: {fileID: 7268376691289176038}
+  _value: 0
+  _deformationType: 0
+  _gateAppearaence: {fileID: 20678070514469667}
 --- !u!114 &20678070514469667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -765,12 +759,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 4405047390841429872}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d31c7c48f90b9b40b23c616ffa3f66e, type: 3}
+  m_Script: {fileID: 11500000, guid: 90f5cc66abc5c214ba518ca40e4d1f48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _value: 300
-  _deformationType: 0
-  _gateAppearaence: {fileID: 2942428858760853440}
+  _text: {fileID: 0}
+  _topImage: {fileID: 6499271654681440472}
+  _glassImage: {fileID: 6304979557050365096}
+  _colorPositive: {r: 0.1254902, g: 0.1254902, b: 0.1254902, a: 0}
+  _colorNegative: {r: 0.7509433, g: 0.12893553, b: 0.13763411, a: 0}
+  _expandLable: {fileID: 2223127502551600551}
+  _shrinkLable: {fileID: 7717926707212537567}
+  _upLable: {fileID: 3849179227822798762}
+  _downLable: {fileID: 7268376691289176038}
 --- !u!65 &4359049272001836031
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -925,7 +925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.26579428, b: 1, a: 0.4}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
