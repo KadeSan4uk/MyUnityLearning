@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: +300
+  m_text: +100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -561,7 +561,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2156099867031124402
 RectTransform:
   m_ObjectHideFlags: 0
@@ -645,7 +645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.010615835, g: 0.21228151, b: 0.8037735, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -677,7 +677,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6808332726763348830
 RectTransform:
   m_ObjectHideFlags: 0
@@ -747,8 +747,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a67e545d2f5cba64d814056386214a7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _value: 0
-  _deformationType: 0
+  _value: 100
+  _deformationType: 1
   _gateAppearaence: {fileID: 20678070514469667}
 --- !u!114 &20678070514469667
 MonoBehaviour:
@@ -762,11 +762,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f5cc66abc5c214ba518ca40e4d1f48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _text: {fileID: 0}
+  _text: {fileID: 3824112214034507100}
   _topImage: {fileID: 6499271654681440472}
   _glassImage: {fileID: 6304979557050365096}
-  _colorPositive: {r: 0.1254902, g: 0.1254902, b: 0.1254902, a: 0}
-  _colorNegative: {r: 0.7509433, g: 0.12893553, b: 0.13763411, a: 0}
+  _colorPositive: {r: 0.010615835, g: 0.21228151, b: 0.8037735, a: 1}
+  _colorNegative: {r: 0.8037735, g: 0.028814409, b: 0.037931807, a: 1}
   _expandLable: {fileID: 2223127502551600551}
   _shrinkLable: {fileID: 7717926707212537567}
   _upLable: {fileID: 3849179227822798762}
@@ -925,7 +925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+  m_Color: {r: 0.010615835, g: 0.21228151, b: 0.8037735, a: 0.4}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
