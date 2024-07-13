@@ -2407,7 +2407,7 @@ PrefabInstance:
     - target: {fileID: 4268936394091056338, guid: a12572c094b8cfb498a088003499759c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.099999905
+      value: 0.091
       objectReference: {fileID: 0}
     - target: {fileID: 4268936394091056338, guid: a12572c094b8cfb498a088003499759c,
         type: 3}
@@ -10170,6 +10170,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Common
+      objectReference: {fileID: 0}
+    - target: {fileID: 7070542910007754435, guid: 731424ae9c5ec8841a8e3ae342125e9b,
+        type: 3}
+      propertyPath: Coins
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7817873339033654118, guid: 731424ae9c5ec8841a8e3ae342125e9b,
         type: 3}

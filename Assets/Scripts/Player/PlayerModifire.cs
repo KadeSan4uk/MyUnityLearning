@@ -1,10 +1,10 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using MyLearning1.Assets.Scripts.Core;
-using MyLearning1.Assets.Scripts.Enviroment;
+using  Core;
+using  Enviroment;
 
-namespace MyLearning1.Assets.Scripts.Player
+namespace  Player
 {
     public class PlayerModifire : MonoBehaviour
     {

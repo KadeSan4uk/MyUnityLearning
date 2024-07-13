@@ -3,10 +3,10 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
-using MyLearning1.Assets.Scripts.Player;
-using MyLearning1.Assets.Scripts.Enviroment;
+using  Player;
+using  Enviroment;
 
-namespace MyLearning1.Assets.Scripts.Core
+namespace  Core
 {
     public class GameManager : MonoBehaviour
     {

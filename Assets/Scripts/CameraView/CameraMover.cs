@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace MyLearning1.Assets.Scripts.Camera
+namespace  CameraView
 {
     public class CameraMover : MonoBehaviour
     {

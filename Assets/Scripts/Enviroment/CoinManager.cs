@@ -1,10 +1,10 @@
 using TMPro;
+using  Core;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using MyLearning1.Assets.Scripts.Core;
 
-namespace MyLearning1.Assets.Scripts.Enviroment
+namespace  Enviroment
 {
     public class CoinManager : MonoBehaviour
     {
