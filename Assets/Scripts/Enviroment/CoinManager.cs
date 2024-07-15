@@ -14,7 +14,10 @@ namespace  Enviroment
         private void Start()
         {
             //обрвщение к статическому полю класса.
-            NumberOfCoins = Progress.Instance.Coins;
+           // NumberOfCoins = Progress.Instance.Coins;
+           // Получаем экземпляр CoinManager
+           CoinManager coinManager = FindObjectOfType<CoinManager>();
+            NumberOfCoins = PlayerPrefs.GetInt("Coins", coinManager.NumberOfCoins);
             _text.text = NumberOfCoins.ToString();
         }
 
@@ -26,7 +29,9 @@ namespace  Enviroment
 
         public void SaveToProgress()
         {
-            Progress.Instance.Coins = NumberOfCoins;
+            //Progress.Instance.Coins = NumberOfCoins;
+            PlayerPrefs.SetInt("Coins", NumberOfCoins); // Сохранение в PlayerPrefs
+            PlayerPrefs.Save(); // Принудительное сохранение на диск
         }
 
         public void SpendCoins(int value)

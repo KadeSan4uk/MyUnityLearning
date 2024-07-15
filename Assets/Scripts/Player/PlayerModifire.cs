@@ -1,10 +1,10 @@
+using Core;
+using Enviroment;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using  Core;
-using  Enviroment;
 
-namespace  Player
+namespace Player
 {
     public class PlayerModifire : MonoBehaviour
     {
@@ -19,7 +19,9 @@ namespace  Player
         [SerializeField] Transform _bottomSpine;
 
         [SerializeField] Transform _collaiderTransform;
-        [SerializeField] AudioSource _audioModifire;
+        public AudioClip modificationSound;
+        public float ModificationSoundVolume;
+
         private void Start()
         {
             SetWidth(Progress.Instance.Width);
@@ -43,7 +45,7 @@ namespace  Player
             UpdateWidth();
             if (value > 0)
             {
-                _audioModifire.Play();
+                PlayModificationSound();
             }
         }
 
@@ -52,7 +54,7 @@ namespace  Player
             _height += value;
             if (value > 0)
             {
-                _audioModifire.Play();
+                PlayModificationSound();
             }
         }
 
@@ -89,6 +91,11 @@ namespace  Player
             {
                 Die();
             }
+
+        }
+        private void PlayModificationSound()
+        {
+            SoundManager.Instance.PlaySound(modificationSound,ModificationSoundVolume);
 
         }
 

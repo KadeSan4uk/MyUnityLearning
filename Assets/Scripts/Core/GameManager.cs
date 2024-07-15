@@ -1,12 +1,12 @@
 using TMPro;
+using Player;
+using Enviroment;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
-using  Player;
-using  Enviroment;
 
-namespace  Core
+namespace Core
 {
     public class GameManager : MonoBehaviour
     {
@@ -17,8 +17,9 @@ namespace  Core
 
         private void Start()
         {
-            _levelText.text = SceneManager.GetActiveScene().name;
+            GetNameLevel();
         }
+
         public void PLay()
         {
             _startMenu.SetActive(false);
@@ -32,14 +33,19 @@ namespace  Core
 
         public void NextLevel()
         {
+            // присваиваем следующую сцену из списка билдера
             int nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
 
             if (nextLevel < SceneManager.sceneCountInBuildSettings)
             {
-                _coinManager.SaveToProgress();
-
+                _coinManager.SaveToProgress();               
                 SceneManager.LoadScene(nextLevel);
             }
+        }
+
+        public void GetNameLevel()
+        {
+            _levelText.text = SceneManager.GetActiveScene().name;
 
         }
     }

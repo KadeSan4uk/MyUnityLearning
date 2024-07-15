@@ -10,6 +10,8 @@ namespace  Core
         public int Width;
         public int Height;
 
+        public static PlayerPrefs PlayerPrefs;        
+
         public static Progress Instance;
 
 
@@ -28,6 +30,7 @@ namespace  Core
             }
 
         }
+        
     }
 
 }

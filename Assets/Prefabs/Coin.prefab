@@ -49,6 +49,7 @@ MonoBehaviour:
   _coinsEffectCollect: {fileID: 3901622341868453045, guid: fed8c51cb97215640949623137ea7a3a,
     type: 3}
   _rotationSpeed: 180
+  CoinsAudioClip: {fileID: 8300000, guid: 6682b88e8b62a1c479de0b2f32fd9cdf, type: 3}
 --- !u!135 &2908808164498251288
 SphereCollider:
   m_ObjectHideFlags: 0
