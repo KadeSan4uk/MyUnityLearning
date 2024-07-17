@@ -239,6 +239,7 @@ MonoBehaviour:
   _bricksEffectPrefab: {fileID: 4113669771007372443, guid: b3d47294b33c0cf4bb7ef6fb1e948b72,
     type: 3}
   BrickSound: {fileID: 8300000, guid: b0aa105e12cbfd84399c441199b63c5d, type: 3}
+  BrickSoundVolume: 0.5
 --- !u!1 &1683075434037841045
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,6 +361,7 @@ MonoBehaviour:
   _bricksEffectPrefab: {fileID: 4113669771007372443, guid: b3d47294b33c0cf4bb7ef6fb1e948b72,
     type: 3}
   BrickSound: {fileID: 8300000, guid: b0aa105e12cbfd84399c441199b63c5d, type: 3}
+  BrickSoundVolume: 0.5
 --- !u!1 &3405525147227379384
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,6 +481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FinishAudioClip: {fileID: 8300000, guid: c93f3cc2dd46fb04d904aeb93efe2e55, type: 3}
+  FinishAudioClipVolume: 0
 --- !u!1 &4158479698539942429
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,6 +603,7 @@ MonoBehaviour:
   _bricksEffectPrefab: {fileID: 4113669771007372443, guid: b3d47294b33c0cf4bb7ef6fb1e948b72,
     type: 3}
   BrickSound: {fileID: 8300000, guid: b0aa105e12cbfd84399c441199b63c5d, type: 3}
+  BrickSoundVolume: 0.5
 --- !u!1 &5887449098199883317
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +763,7 @@ MonoBehaviour:
   _bricksEffectPrefab: {fileID: 4113669771007372443, guid: b3d47294b33c0cf4bb7ef6fb1e948b72,
     type: 3}
   BrickSound: {fileID: 8300000, guid: b0aa105e12cbfd84399c441199b63c5d, type: 3}
+  BrickSoundVolume: 0.5
 --- !u!1 &8343699994596800170
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,3 +885,4 @@ MonoBehaviour:
   _bricksEffectPrefab: {fileID: 4113669771007372443, guid: b3d47294b33c0cf4bb7ef6fb1e948b72,
     type: 3}
   BrickSound: {fileID: 8300000, guid: b0aa105e12cbfd84399c441199b63c5d, type: 3}
+  BrickSoundVolume: 0.5

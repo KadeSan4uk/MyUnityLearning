@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _backgroundMusic: {fileID: 8300000, guid: 81b0daca5d8edb946a8a0d68bbcf0188, type: 3}
-  BackgroundMusicVolume: -50
+  BackgroundMusicVolume: 1
 --- !u!82 &2377758319108015604
 AudioSource:
   m_ObjectHideFlags: 0

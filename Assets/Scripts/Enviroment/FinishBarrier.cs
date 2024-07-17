@@ -10,7 +10,7 @@ namespace  Enviroment
     {
         [SerializeField] private GameObject _bricksEffectPrefab;
         public AudioClip BrickSound;
-        public float BrickSoundVolume;
+        [SerializeField] private float BrickSoundVolume;
         private void OnTriggerEnter(Collider other)
         {
             PlayerModifire playerModifaer = other.attachedRigidbody.GetComponent<PlayerModifire>();

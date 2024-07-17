@@ -10,7 +10,7 @@ namespace Core
 
         private AudioSource audioSource;
         public AudioClip _backgroundMusic;
-        public float BackgroundMusicVolume;
+        [SerializeField] private float BackgroundMusicVolume;
 
         void Awake()
         {

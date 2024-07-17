@@ -10,7 +10,7 @@ namespace Core
     {
 
         public AudioClip FinishAudioClip;
-        public float FinishAudioClipVolume;
+        [SerializeField] private float FinishAudioClipVolume;
 
         private void OnTriggerEnter(Collider other)
         {
@@ -19,7 +19,7 @@ namespace Core
             if (playerBehaviuor)
             {
                 SaveProgress();
-                SoundManager.Instance.PlaySound(FinishAudioClip,FinishAudioClipVolume);
+                SoundManager.Instance.PlaySound(FinishAudioClip, FinishAudioClipVolume);
                 playerBehaviuor.StartFinishBehaviuor();
                 FindObjectOfType<GameManager>().ShowFinishWindow();
             }

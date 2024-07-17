@@ -20,7 +20,7 @@ namespace Player
 
         [SerializeField] Transform _collaiderTransform;
         public AudioClip modificationSound;
-        public float ModificationSoundVolume;
+        [SerializeField] private float ModificationSoundVolume;
 
         private void Start()
         {

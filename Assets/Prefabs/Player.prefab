@@ -5091,6 +5091,7 @@ MonoBehaviour:
   _bottomSpine: {fileID: 6781830159435336828}
   _collaiderTransform: {fileID: 8160264782801851317}
   modificationSound: {fileID: 8300000, guid: 633b25e09807c684cb38fef9ba430cf2, type: 3}
+  ModificationSoundVolume: 0.7
 --- !u!114 &3735455980046558255
 MonoBehaviour:
   m_ObjectHideFlags: 0
