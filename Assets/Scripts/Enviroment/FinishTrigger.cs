@@ -25,7 +25,15 @@ namespace Core
             }
         }
         public void SaveProgress()
-        { // Получаем экземпляр CoinManager
+        {
+            PlayerModifire playerModifier = FindObjectOfType<PlayerModifire>();
+            if (playerModifier != null)
+            {
+                // Сохраняем значения в Progress
+                Progress.Instance.Height = playerModifier.Height();
+                Progress.Instance.Width = playerModifier.Width();
+            }
+            // Получаем экземпляр CoinManager
             CoinManager coinManager = FindObjectOfType<CoinManager>();
             if (coinManager != null)
             {

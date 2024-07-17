@@ -481,7 +481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FinishAudioClip: {fileID: 8300000, guid: c93f3cc2dd46fb04d904aeb93efe2e55, type: 3}
-  FinishAudioClipVolume: 0
+  FinishAudioClipVolume: 1
 --- !u!1 &4158479698539942429
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@ using Core;
 using Enviroment;
 using UnityEngine;
 using System.Collections;
+using JetBrains.Annotations;
 using System.Collections.Generic;
 
 namespace Player
@@ -12,7 +13,7 @@ namespace Player
         [SerializeField] int _width;
         [SerializeField] int _height;
         float _widthMultiplayer = 0.0005f;
-        float _heightMultiplayer = 0.01f;
+        float _heightMultiplayer = 0.008f;
 
         [SerializeField] Renderer _renderer;
         [SerializeField] Transform _topSpine;
@@ -35,7 +36,7 @@ namespace Player
 
             _topSpine.position = _bottomSpine.position + new Vector3(0, offsetY, 0);
 
-            _collaiderTransform.localScale = new Vector3(1, 1.84f + _height * _heightMultiplayer, 1);
+            _collaiderTransform.localScale = new Vector3(0.7f + _width * _widthMultiplayer*2.5f, 1.84f + _height * _heightMultiplayer, 0.7f + _width * _widthMultiplayer*2.5f);
         }
 
 
@@ -73,7 +74,7 @@ namespace Player
         {
             if (_width > 0)
             {
-                _width -= 30;
+                _width -= 3;
                 UpdateWidth();
             }
             else
@@ -85,7 +86,7 @@ namespace Player
         {
             if (_height > 0)
             {
-                _height -= 50;
+                _height -= 4;
             }
             else
             {
@@ -95,7 +96,7 @@ namespace Player
         }
         private void PlayModificationSound()
         {
-            SoundManager.Instance.PlaySound(modificationSound,ModificationSoundVolume);
+            SoundManager.Instance.PlaySound(modificationSound, ModificationSoundVolume);
 
         }
 
@@ -108,6 +109,15 @@ namespace Player
         {
             Destroy(gameObject);
             FindObjectOfType<GameManager>().ShowFinishWindow();
+        }
+
+        public int Height()
+        {
+            return _height;
+        }
+        public int Width()
+        {
+            return _width;
         }
     }
 

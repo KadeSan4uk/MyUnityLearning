@@ -1,8 +1,8 @@
+using  Player;
 using UnityEngine;
+using  Enviroment;
 using System.Collections;
 using System.Collections.Generic;
-using  Player;
-using  Enviroment;
 
 namespace  Core
 {
@@ -24,7 +24,7 @@ namespace  Core
             {
                 _coinManager.SpendCoins(ModificationPrice);
                 Progress.Instance.Coins = _coinManager.NumberOfCoins;
-                Progress.Instance.Width += 25;
+                Progress.Instance.Width += 5;
                 _playerModifire.SetWidth(Progress.Instance.Width);
             }
         }
@@ -34,7 +34,7 @@ namespace  Core
             {
                 _coinManager.SpendCoins(ModificationPrice);
                 Progress.Instance.Coins = _coinManager.NumberOfCoins;
-                Progress.Instance.Height += 25;
+                Progress.Instance.Height += 5;
                 _playerModifire.SetHeight(Progress.Instance.Height);
 
             }
